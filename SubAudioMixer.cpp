@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <commctrl.h>
 #include <limits.h>
+#define NEAACDECAPI
 #include <neaacdec.h>
 #include <algorithm>
 #include <utility>

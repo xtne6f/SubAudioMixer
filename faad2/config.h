@@ -3,4 +3,8 @@
 
 #include <string.h>
 
+#ifdef _LIB
+#define NEAACDECAPI
+#endif
+
 #endif

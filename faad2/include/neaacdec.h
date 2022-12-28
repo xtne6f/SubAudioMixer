@@ -60,7 +60,9 @@ extern "C" {
 
 #ifdef _WIN32
   #pragma pack(push, 8)
-  #define NEAACDECAPI __declspec(dllexport)
+  #ifndef NEAACDECAPI
+    #define NEAACDECAPI __declspec(dllexport)
+  #endif
 #elif defined(__GNUC__) && __GNUC__ >= 4
   #define NEAACDECAPI __attribute__((visibility("default")))
 #else
